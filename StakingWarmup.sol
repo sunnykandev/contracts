@@ -78,7 +78,7 @@ interface IERC20 {
 contract StakingWarmup {
 
     address public immutable staking;
-    IERC20 public immutable MEMOries;
+    IERC20 public MEMOries;
 
     constructor ( address _staking, address _MEMOries ) {
         require( _staking != address(0) );
